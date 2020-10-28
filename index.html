@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="card">
+            <div class="img-container">
+                <img src="img/music-1.jpg" alt="Album Art">
+            </div>
+
+            <div class="info">
+                 <h1 id="title">Latin Love</h1>
+                <h3 id="artist">Ahjay</h3>
+                <audio src="music/music-1.mp3"></audio>
+                <div class="progress-container" id="progress-container">
+                    <div class="progress" id="progress"></div>
+                    <div class="duration-wrapper">
+                        <span id="current-time">0:00</span>
+                        <span id="duration">2:06</span>
+                    </div>
+                </div>
+                <div class="playercontrols">
+                    <i class="fas fa-backward" id="prev" title="Previous"></i>
+                    <i class="fas fa-play main-button" id="play" title="Play"></i>
+                    <i class="fas fa-forward" id="next" title="Next"></i>
+                   
+                </div>
+                <div class="volumecontrols">
+                    <i class="fas fa-volume-down" id="down"></i>
+                    <input type="range" min="1" max="100" value="100" id="slider">
+                    <i class="fas fa-volume-up"id="up"></i>
+                    
+                </div>
+            </div>
+               
+
+         
+            
+
+        </div> 
+        <!-- end of card -->
+        
+        <div class="tips">
+            <h3 class="tip-info">Tips</h3>
+            <h4 class="tip-info">Press "U" to Volume Up</h4>
+            <h4 class="tip-info">Press "D" to Volume Down</h4>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js" ></script>
+   
+</body>
+</html>
