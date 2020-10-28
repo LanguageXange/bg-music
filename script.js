@@ -47,7 +47,7 @@ let currentVol = 1
 function Decrease(){
   currentVol -=0.1
    if(currentVol <0.1){
-    music.volume = 0;
+    currentVol= 0;
   }
   music.volume = currentVol
  
@@ -56,7 +56,7 @@ function Decrease(){
 function Increase(){
   currentVol +=0.1
   if(currentVol >0.99){
-    music.volume = 1;
+    currentVol = 1;
   }
   music.volume = currentVol
   
