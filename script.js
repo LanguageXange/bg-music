@@ -46,18 +46,20 @@ Playercontainer.addEventListener("mouseleave", (e) => {
 let currentVol = 1
 function Decrease(){
   currentVol -=0.1
-  music.volume = currentVol
-  if(currentVol <0.1){
+   if(currentVol <0.1){
     music.volume = 0;
   }
+  music.volume = currentVol
+ 
   slider.value = currentVol *100
 }
 function Increase(){
   currentVol +=0.1
-  music.volume = currentVol
   if(currentVol >0.99){
     music.volume = 1;
   }
+  music.volume = currentVol
+  
   slider.value = currentVol *100
 }
 
